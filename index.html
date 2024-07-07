@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="utls.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navigationBar flex justify-space-between align-center px-2 my-1">
+            <div class=" logo"><img src="logo.jpg" alt="Pf-Image" class="pflogo">
+            </div>
+        </nav>
+    </header>
+    <!-- adjust the height of the header and then the body -->
+    <main>
+        <div class="container">
+            <div class="content flex">
+                <div style="width: 75%;">
+                    <div class="maincontent mx-2 my-2">
+                        <div class="qbox flex justify-center align-center flex-wrap my-2 p-10px" id="questionbox">
+                            <p id="question"></p>
+                        </div>
+                        <div class="options my-2 p-10px" id="one"></div>
+                        <div class="options my-2 p-10px" id="two"></div>
+                        <div class="options my-2 p-10px" id="three"></div>
+                        <div class="options my-2 p-10px" id="four"></div>
+                    </div>
+                    <button id="nextques" class="btn mx-2 my-2">Next Question</button>
+                    <button id="restart" class="btn my-2">Restart</button>
+                </div>
+                <div class="other">
+                    <div class="flex align-center my-2">
+                        <span class="timer my-2 mx-2 flex align-center justify-center" id="timeleft"></span>
+                    </div>
+                    <div class="score my-2 p-10px radius-10" id="cans">Score : 0</div>
+                    <div class="qleft my-2 p-10px radius-10" id="quesleft"></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="cardfolder flex flex-wrap my-3 justify-center">
+                <img src="./imgs/cquiz.jpeg" alt="" class="quizCard animation-rotate-right">
+                <img src="./imgs/filmquiz.jpeg" alt="" class="quizCard animation-rotate-right">
+                <img src="./imgs/geoquiz.jpeg" alt="" class="quizCard animation-rotate-right">
+            </div>
+            <div class="cardfolder flex flex-wrap my-3 justify-center">
+                <img src="./imgs/quiztime.jpeg" alt="" class="quizCard animation-rotate-left">
+                <img src="./imgs/saquiz.jpeg" alt="" class="quizCard animation-rotate-left">
+                <img src="./imgs/squiz.jpeg" alt="" class="quizCard animation-rotate-left">
+            </div>
+            <div class="start flex justify-center" id="onstartup">
+                <button class="btn p-10px" id="startQuiz">Click Here to Start</button>
+            </div>
+            <aside>
+                <div class="sticklogo flex align-center justify-center"><img src="quizbottom.png" alt="Quiz logo"
+                        id="quizimg"></div>
+            </aside>
+        </div>
+    </main>
+</body>
+<script src="index.js"></script>
+
+</html>

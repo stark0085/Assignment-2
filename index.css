@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    background-color: #e8ae30d4;
+    width: 100%;
+}
+
+.pflogo {
+    width: 77px;
+    border-radius: 5px;
+}
+
+main {
+    position: relative;
+    padding-top: 100px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: #18223f;
+    height: 100vh;
+}
+
+.container {
+    display: none;
+}
+
+.quizCard {
+    width: 20vw;
+    height: 14vw;
+    margin: 0 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: relative;
+}
+
+#startQuiz {
+    background-color: #e8ae30d4;
+    border-radius: 5px;
+}
+
+.animation-rotate-right {
+    animation: rotate-right 4s linear infinite;
+}
+
+.animation-rotate-left {
+    animation: rotate-left 4s linear infinite;
+}
+
+.animation-max-rotate-right {
+    animation: rotate-right 6s linear infinite;
+}
+
+.animation-max-rotate-left {
+    animation: rotate-left 6s linear infinite;
+}
+
+.btn {
+    font-size: 0.9rem;
+    border-radius: 5px;
+    background-color: #787199;
+    color: white;
+}
+
+.maincontent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.qbox {
+    border: 2px solid black;
+    font-size: 2rem;
+    border-radius: 20px;
+    background-color: #787199;
+    color: black;
+}
+
+.options {
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 1.3rem;
+    background-color: #00ffffab;
+    color: #353533;
+    border-radius: 10px;
+    font-weight: 550;
+}
+
+#questionbox {
+    grid-row: 1/5;
+    grid-column: 1/6;
+}
+
+#one {
+    grid-row: 5/6;
+    grid-column: 1/3;
+}
+
+#two {
+    grid-row: 5/6;
+    grid-column: 4/6;
+}
+
+#three {
+    grid-row: 6/7;
+    grid-column: 1/3;
+}
+
+#four {
+    grid-row: 6/7;
+    grid-column: 4/6;
+}
+
+.other {
+    font-size: 1.3rem;
+    width: 25%;
+}
+
+#timeleft {
+    font-size: 2rem;
+    background-color: #644e61;
+}
+
+.score {
+    border: 2px solid black;
+}
+
+.timer {
+    border: 2px solid black;
+    border-radius: 51%;
+    height: 5vw;
+    width: 5vw;
+}
+
+#nextques {
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#restart {
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#cans {
+    background-color: #644e61;
+}
+
+#quesleft {
+    background-color: #644e61;
+}
+
+#onstartup {
+    margin-top: 2vw;
+    padding-bottom: 0.5vw;
+}
+
+.sticklogo {
+    position: absolute;
+    z-index: 2;
+    border: 1px solid aqua;
+    border-radius: 51%;
+    bottom: 16vh;
+    right: 20px;
+}
+
+#quizimg {
+    width: max(7vh, 6vw);
+}
+
+@keyframes rotate-right {
+    0% {
+        right: 0;
+    }
+
+    25% {
+        right: 17vw;
+    }
+
+    50% {
+        right: 0;
+    }
+
+    75% {
+        right: -17vw;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes rotate-left {
+    0% {
+        left: 0;
+    }
+
+    25% {
+        left: 17vw;
+    }
+
+    50% {
+        left: 0;
+    }
+
+    75% {
+        left: -17vw;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes max-rotate-right {
+    0% {
+        right: 0;
+    }
+
+    25% {
+        right: 29vw;
+    }
+
+    50% {
+        right: 0;
+    }
+
+    75% {
+        right: -29vw;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes max-rotate-left {
+    0% {
+        left: 0;
+    }
+
+    25% {
+        left: 29vw;
+    }
+
+    50% {
+        left: 0;
+    }
+
+    75% {
+        left: -29vw;
+    }
+
+    100% {
+        left: 0;
+    }
+}
