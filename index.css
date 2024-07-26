@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 header {
@@ -256,5 +257,20 @@ main {
 
     100% {
         left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #timeleft{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #timeleft{
+        font-size: 0.6rem;
+    }
+    #queseft{
+        font-size: 0.6rem;
     }
 }
